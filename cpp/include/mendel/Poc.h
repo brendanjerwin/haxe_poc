@@ -1,11 +1,12 @@
-#ifndef INCLUDED_Poc
-#define INCLUDED_Poc
+#ifndef INCLUDED_mendel_Poc
+#define INCLUDED_mendel_Poc
 
 #ifndef HXCPP_H
 #include <hxcpp.h>
 #endif
 
-HX_DECLARE_CLASS0(Poc)
+HX_DECLARE_CLASS1(mendel,Poc)
+namespace mendel{
 
 
 class HXCPP_CLASS_ATTRIBUTES  Poc_obj : public hx::Object{
@@ -36,5 +37,6 @@ class HXCPP_CLASS_ATTRIBUTES  Poc_obj : public hx::Object{
 
 };
 
+} // end namespace mendel
 
-#endif /* INCLUDED_Poc */ 
+#endif /* INCLUDED_mendel_Poc */ 

@@ -1,10 +1,11 @@
 (function () { "use strict";
-var Poc = function() { }
-Poc.main = function() {
-	console.log(Poc.DataInOut("haxe to haxe"));
+var mendel = {}
+mendel.Poc = function() { }
+mendel.Poc.main = function() {
+	console.log(mendel.Poc.DataInOut("haxe to haxe"));
 }
-Poc.DataInOut = function(val) {
+mendel.Poc.DataInOut = function(val) {
 	return "You passed a string (" + val + ") to me!";
 }
-Poc.main();
+mendel.Poc.main();
 })();

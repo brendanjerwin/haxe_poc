@@ -1,11 +1,12 @@
 #include <hxcpp.h>
 
-#ifndef INCLUDED_Poc
-#include <Poc.h>
-#endif
 #ifndef INCLUDED_haxe_Log
 #include <haxe/Log.h>
 #endif
+#ifndef INCLUDED_mendel_Poc
+#include <mendel/Poc.h>
+#endif
+namespace mendel{
 
 Void Poc_obj::__construct()
 {
@@ -27,9 +28,9 @@ Dynamic Poc_obj::__Create(hx::DynamicArray inArgs)
 
 Void Poc_obj::main( ){
 {
-		HX_STACK_PUSH("Poc::main","Poc.hx",2);
-		HX_STACK_LINE(2)
-		::haxe::Log_obj::trace(::Poc_obj::DataInOut(HX_CSTRING("haxe to haxe")),hx::SourceInfo(HX_CSTRING("Poc.hx"),3,HX_CSTRING("Poc"),HX_CSTRING("main")));
+		HX_STACK_PUSH("Poc::main","Poc.hx",3);
+		HX_STACK_LINE(3)
+		::haxe::Log_obj::trace(::mendel::Poc_obj::DataInOut(HX_CSTRING("haxe to haxe")),hx::SourceInfo(HX_CSTRING("Poc.hx"),4,HX_CSTRING("Poc"),HX_CSTRING("main")));
 	}
 return null();
 }
@@ -38,9 +39,9 @@ return null();
 STATIC_HX_DEFINE_DYNAMIC_FUNC0(Poc_obj,main,(void))
 
 ::String Poc_obj::DataInOut( ::String val){
-	HX_STACK_PUSH("Poc::DataInOut","Poc.hx",6);
+	HX_STACK_PUSH("Poc::DataInOut","Poc.hx",7);
 	HX_STACK_ARG(val,"val");
-	HX_STACK_LINE(6)
+	HX_STACK_LINE(7)
 	return ((HX_CSTRING("You passed a string (") + val) + HX_CSTRING(") to me!"));
 }
 
@@ -104,7 +105,7 @@ Class Poc_obj::__mClass;
 
 void Poc_obj::__register()
 {
-	hx::Static(__mClass) = hx::RegisterClass(HX_CSTRING("Poc"), hx::TCanCast< Poc_obj> ,sStaticFields,sMemberFields,
+	hx::Static(__mClass) = hx::RegisterClass(HX_CSTRING("mendel.Poc"), hx::TCanCast< Poc_obj> ,sStaticFields,sMemberFields,
 	&__CreateEmpty, &__Create,
 	&super::__SGetClass(), 0, sMarkStatics, sVisitStatics);
 }
@@ -113,3 +114,4 @@ void Poc_obj::__boot()
 {
 }
 
+} // end namespace mendel

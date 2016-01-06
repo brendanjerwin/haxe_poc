@@ -1,3 +1,4 @@
+@:native("mendel.Poc")
 class Poc {
     static public function main():Void {
         trace(Poc.DataInOut("haxe to haxe"));

@@ -2,13 +2,13 @@
 
 #include <stdio.h>
 
-#ifndef INCLUDED_Poc
-#include <Poc.h>
+#ifndef INCLUDED_mendel_Poc
+#include <mendel/Poc.h>
 #endif
 
 
 HX_BEGIN_MAIN
 
-::Poc_obj::main();
+::mendel::Poc_obj::main();
 HX_END_MAIN
 

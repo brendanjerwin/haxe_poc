@@ -182,7 +182,7 @@ M haxe.root.StdTypes
 M java.nio.file.attribute.UserPrincipal
 M java.lang.Exception
 M haxe.root.Poc
-C haxe.root.Poc
+C mendel.Poc
 M java.lang.System
 M java.nio.channels.AsynchronousFileChannel
 M java.lang.Thread

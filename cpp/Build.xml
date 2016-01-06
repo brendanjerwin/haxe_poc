@@ -8,9 +8,9 @@
   <file name="src/Std.cpp">
    <depend name="include/Std.h"/>
   </file>
-  <file name="src/Poc.cpp">
-   <depend name="include/Poc.h"/>
+  <file name="src/mendel/Poc.cpp">
    <depend name="include/haxe/Log.h"/>
+   <depend name="include/mendel/Poc.h"/>
   </file>
   <file name="src/__boot__.cpp">
   </file>
@@ -22,13 +22,13 @@
 <files id="__lib__">
 <compilerflag value="-Iinclude"/>
   <file name="src/__lib__.cpp">
-   <depend name="include/Poc.h"/>
+   <depend name="include/mendel/Poc.h"/>
   </file>
 </files>
 <files id="__main__">
 <compilerflag value="-Iinclude"/>
   <file name="src/__main__.cpp">
-   <depend name="include/Poc.h"/>
+   <depend name="include/mendel/Poc.h"/>
   </file>
 </files>
 <set name="HAXE_OUTPUT" value="Poc" />
